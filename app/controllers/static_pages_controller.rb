@@ -5,4 +5,9 @@ class StaticPagesController < ApplicationController
       @feed_items = current_user.feed.paginate page: params[:page], per_page: 25
     end
   end
+  
+  def profile
+    
+  end
+  
 end
