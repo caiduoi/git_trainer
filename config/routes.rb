@@ -9,7 +9,7 @@ AppTutorial::Application.routes.draw do
   resources :relationships, only: [:create, :destroy]
   root  'static_pages#home'
   match '/about',   to: 'static_pages#about',   via: 'get'
-    match '/help',   to: 'static_pages#help',   via: 'get'
+  match '/help',   to: 'static_pages#help',   via: 'get'
   match '/profile',   to: 'static_pages#profile',   via: 'get'
   match '/signup',  to: 'users#new',            via: 'get'
   match '/signin',  to: 'sessions#new',         via: 'get'
